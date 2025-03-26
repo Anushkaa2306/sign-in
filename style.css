@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+  }
+  .container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    height: 10vh;
+    width: 40vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+.opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-student{
+
+}
+h2 {
+    margin-bottom: 20px;
+}
+.btn {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.student {
+    background-color: #8bc0f3;
+    color: white;
+}
+.teacher {
+    background-color: #a9caed;
+    color: white;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+  .login {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 40vh;
+    margin-bottom: 50px;
+  }
+  .login:hover {
+    color: rgb(134, 134, 223);
+  }
+  .text-gray-600 {
+    font-size: 17px;
+    margin-top: 30px;
+    margin-right: 65px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  .shadow-md {
+    border-radius: 20px;
+    width: 60vh;
+    height: 65vh;
+  }
+  .background {
+    background: url('https://media.istockphoto.com/id/1453723844/photo/dressing-room-interior-with-shoes-bags-and-hanging-clothes.jpg?s=612x612&w=0&k=20&c=LObEMql56AUQjLnBtV0OK5zKKhWDgSYztxoKCrSqBtw=')
+      no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -10px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(10px);
+  }
+  p{
+    margin-left: 70px;
+  }
+  h1 {
+    font-size: 40px;
+    color: rgb(244, 231, 214);
+  }
+  .button {
+    height: 6vh;
+    width: 30vh;
+    background-color: black;
+    color: rgb(244, 231, 214);
+    font-size: 30px;
+    border: 1px solid rgb(250, 248, 248);
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .button:hover {
+    background-color: rgb(244, 231, 214);
+    color: black;
+  }

@@ -9,14 +9,20 @@
       integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Password Strength Background</title>
+   <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
   </head>
   <body>
+    
     <div class="background" id="background"></div>
     <div class="bg-black rounded p-8 text-center shadow-md">
-      <h1 class="h1">SIGN IN</h1>
-
+      <h1 class="h1">SIGN UP</h1>
+     <div class="container">
+      <h2>Please Select Your Role</h2>
+      <div class="opt">
+      <button class="btn-student">You are a Student</button>
+      <button class="btn-teacher">You are a Teacher</button></div>
+  </div>
       <form id="loginForm">
         <div class="my-4 text-left">
           <label for="email" class="text-gray-400">Email:</label>
@@ -41,105 +47,43 @@
         <button class="button" type="submit">Submit</button>
       </form>
 
-      <p class="text-sm text-gray-600">Join with us and keep your wardrobe in your hand!!</p>
+      <p class="text-sm text-gray-600">Join Us in Revolutionizing Education!
+      </p>
       <a href="#" class="login">Login!!</a>
     </div>
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      .login {
-        color: antiquewhite;
-        text-decoration: none;
-        font-size: 25px;
-        margin-right: 40vh;
-        margin-bottom: 50px;
-      }
-      .login:hover {
-        color: rgb(134, 134, 223);
-      }
-      .text-gray-600 {
-        font-size: 17px;
-        margin-top: 30px;
-        margin-right: 65px;
-      }
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        overflow: hidden;
-        margin: 0;
-      }
-      .shadow-md {
-        border-radius: 20px;
-        width: 60vh;
-        height: 65vh;
-      }
-      .background {
-        background: url('https://media.istockphoto.com/id/1453723844/photo/dressing-room-interior-with-shoes-bags-and-hanging-clothes.jpg?s=612x612&w=0&k=20&c=LObEMql56AUQjLnBtV0OK5zKKhWDgSYztxoKCrSqBtw=')
-          no-repeat center center/cover;
-        position: absolute;
-        top: -20px;
-        bottom: -20px;
-        left: -10px;
-        right: -20px;
-        z-index: -1;
-        filter: blur(10px);
-      }
-      h1 {
-        font-size: 40px;
-        color: rgb(244, 231, 214);
-      }
-      .button {
-        height: 6vh;
-        width: 30vh;
-        background-color: black;
-        color: rgb(244, 231, 214);
-        font-size: 30px;
-        border: 1px solid rgb(250, 248, 248);
-        margin-top: 20px;
-        border-radius: 20px;
-        transition: 0.5s;
-      }
-      .button:hover {
-        background-color: rgb(244, 231, 214);
-        color: black;
-      }
-    </style>
+  
 
-    <script>
-      const password = document.getElementById('password');
-      const background = document.getElementById('background');
+  <script>
+    const password = document.getElementById('password');
+const background = document.getElementById('background');
 
-      // Password Blur Effect
-      password.addEventListener('input', (e) => {
-        const input = e.target.value;
-        const length = input.length;
-        const blurValue = 10 - length * 1;
-        background.style.filter = `blur(${blurValue}px)`;
-      });
+// Password Blur Effect
+password.addEventListener('input', (e) => {
+  const input = e.target.value;
+  const length = input.length;
+  const blurValue = 10 - length * 1;
+  background.style.filter = `blur(${blurValue}px)`;
+});
 
-      // Form Submission
-      document.getElementById("loginForm").addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent form default action
-        
-        let email = document.getElementById("email").value;
-        let password = document.getElementById("password").value;
+// Form Submission
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent form default action
+  
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
 
-        if (email && password) {
-          // Save user data in Local Storage
-          localStorage.setItem("isLoggedIn", "true");
-          localStorage.setItem("userEmail", email);
+  if (email && password) {
+    // Save user data in Local Storage
+    localStorage.setItem("isLoggedIn", "true");
+    localStorage.setItem("userEmail", email);
 
-          // Redirect to Home Page
-          window.location.href = "https://wardrow.vercel.app/";
-        } else {
-          alert("Please enter valid email and password.");
-        }
-      });
-    </script>
+    // Redirect to Home Page
+    window.location.href = "";
+  } else {
+    alert("Please enter valid email and password.");
+  }
+});
+  </script>
   </body>
 </html>
